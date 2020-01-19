@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 6041474747555372978}
   - component: {fileID: 2898774353965577457}
   - component: {fileID: 5373406383523823629}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -105,7 +105,7 @@ GameObject:
   - component: {fileID: 7118657835947831559}
   - component: {fileID: 4259126198785262007}
   - component: {fileID: 6425941617350375257}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Flashlight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -263,7 +263,7 @@ GameObject:
   - component: {fileID: 6387717239679032905}
   - component: {fileID: 7302833618324394214}
   - component: {fileID: 3424603790866495471}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -354,7 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 982006693474645366}
   - component: {fileID: 7262396797491373194}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Spot Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -445,7 +445,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1441841938186176932}
   - component: {fileID: 4515276764794796721}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Light Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -489,7 +489,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3579298901098997091}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Model
   m_TagString: Untagged
   m_Icon: {fileID: 0}

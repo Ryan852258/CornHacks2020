@@ -7,11 +7,15 @@ public class AnimalFeeding : MonoBehaviour
     public GameObject[] animals;
     int current;
     int count = 0;
+    public GameObject good;
+    public GameObject bad;
+    public GameObject smoke;
+
     //Random random = new Random();
 
     void Start()
     {
-        current = Random.Range(0, 10);
+        current = Random.Range(0, 9);
         animals[current].SetActive(true);
     }
 
@@ -21,15 +25,17 @@ public class AnimalFeeding : MonoBehaviour
         count++;
         if(count >= 9)
         {
-            //do
+            smoke.SetActive(true);
+            good.SetActive(true);
+            bad.SetActive(false);
         }
         else
         {
-            int next = Random.Range(0, 10);
+            int next = Random.Range(0, 9);
             // int i = random.Next(animals.Count);
             while(next == current)
             {
-                next = Random.Range(0, 10);
+                next = Random.Range(0, 9);
             }
             animals[current].SetActive(false);
             animals[next].SetActive(true);

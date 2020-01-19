@@ -8,7 +8,6 @@ public class LockManager : MonoBehaviour
     public GameObject lock2;
     public GameObject lock3;
 
-    public GameObject snow;
     public AudioSource collect;
     public AudioSource music;
     private bool mutex = false;
