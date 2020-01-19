@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/WinterForest.unity
+    guid: d4d7026df5e280b4b9d4628b73776b70
   m_configObjects: {}
