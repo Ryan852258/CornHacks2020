@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.winterforest.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\SD\\CornHacks2020\\Winter Forest\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\CornHacks2020\\Winter Forest\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Winter Forest [Testing]"

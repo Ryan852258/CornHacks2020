@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class SnowmanSpawner : MonoBehaviour
 {
+    public GameObject spawnTerrain;
     public float spawnFrequency = 4.0f;
     public int maxSpawns = 5;
     public int scoreToWin = 100;
@@ -20,13 +21,14 @@ public class SnowmanSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        spawnTerrain.SetActive(false);
         random = new System.Random();
         spawnList = new List<GameObject>();
         foreach (Transform child in spawns.transform)
         {
             spawnList.Add(child.gameObject);
         }
-        Debug.Log("Game initialized");
+        //Debug.Log("Game initialized");
     }
 
     // Update is called once per frame
@@ -51,7 +53,7 @@ public class SnowmanSpawner : MonoBehaviour
 
     void SpawnSnowman()
     {
-        Debug.Log("Spawning snowman");
+        //Debug.Log("Spawning snowman");
         GameObject spawnLocation = ChooseRandomSpawnLocation();
         GameObject snowman = Instantiate(snowmanPrefab, spawnLocation.transform.position, spawnLocation.transform.rotation) as GameObject;
         Snowman snowmanScript = snowman.GetComponent<Snowman>();
@@ -60,7 +62,7 @@ public class SnowmanSpawner : MonoBehaviour
         snowmanScript.SetScore(spawnScript.score);
         snowmanScript.StartTimer(spawnScript.time);
         totalSnowmen += 1;
-        Debug.Log(System.String.Format("Total snowmen: {0}", totalSnowmen));
+        //Debug.Log(System.String.Format("Total snowmen: {0}", totalSnowmen));
     }
 
     GameObject ChooseRandomSpawnLocation()
@@ -71,8 +73,8 @@ public class SnowmanSpawner : MonoBehaviour
 
     public void Miss()
     {
-        Debug.Log("You suck.");
-        Debug.Log(score);
+        //Debug.Log("You suck.");
+        //Debug.Log(score);
         totalSnowmen -= 1;
         if (score > 2) score -= missPenalty;
         else
@@ -83,15 +85,16 @@ public class SnowmanSpawner : MonoBehaviour
 
     public void Score(int score)
     {
-        Debug.Log("Hit!");
-        Debug.Log(score);
+        //Debug.Log("Hit!");
+        //Debug.Log(score);
         totalSnowmen -= 1;
         this.score += score;
     }
 
     void CompleteGame()
     {
-        Debug.Log("You win!");
+        //Debug.Log("You win!");
         gameComplete = true;
+        spawnTerrain.SetActive(true);
     }
 }
