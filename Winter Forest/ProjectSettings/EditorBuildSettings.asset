@@ -4,8 +4,5 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes:
-  - enabled: 1
-    path: Assets/Scenes/Cave Search.unity
-    guid: 75cac308b8c353e4cb6b317f30739f64
+  m_Scenes: []
   m_configObjects: {}
