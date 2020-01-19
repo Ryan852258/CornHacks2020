@@ -22,7 +22,7 @@ public class Lock : MonoBehaviour
                 currentLockRotation += 360;
             }
         }
-
+        Debug.Log(circle.name + " " + currentLockRotation);
         if((currentLockRotation >= (goal-20)) && (currentLockRotation <= (goal + 20))){
             done = true;
         }
